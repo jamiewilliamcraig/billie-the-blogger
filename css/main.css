@@ -19,10 +19,23 @@ Light section: #F7F9FB
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #687864
+  color: #687864;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.banner {
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+h1 {
+  color: #F7F9FB;
+  font-size: 3rem;
+  max-width: 60%;
+  margin: auto;
+}
+
+h2, h3, h4, h5, h6 {
   color: #5085A5;
   margin-bottom: 1rem;
 }
@@ -36,9 +49,10 @@ img {
   max-width: 100%;
 }
 
-.bg-img {
+.bg-img-portfolio {
   background-position: center;
   background-size: cover;
+  min-height: 40vh;
 }
 
 a {
@@ -78,6 +92,19 @@ section {
 
 .full-width{
   width: 100%;
+}
+
+.homepage-description {
+  margin: auto;
+  margin-top: -2rem;
+  background-color: #31708E;
+  color: #F7F9FB;
+  width: 80%;
+  padding: 5%;
+}
+
+.homepage-description h3 {
+  color: #F7F9FB;
 }
 
 .capped-width { width: 80%; margin: auto;}
@@ -165,6 +192,6 @@ hr { /* this is a line element */
 /* Specific CSS for xl */
 @media (min-width: 80em) {
   #size-indicator::after {
-    content: "extra large (xl)";  
+    content: "extra large (xl)";
   }
 }

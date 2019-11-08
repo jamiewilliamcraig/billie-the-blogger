@@ -1,0 +1,5 @@
+collections:
+  portfolio:
+    output: true
+  blog:
+    output: true

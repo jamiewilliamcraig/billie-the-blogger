@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!-- Portfolio posts -->
+
+<section class="padded">
+  <h2 class="centered">
+    Latest Portfolio posts
+  </h2>
+  <div class="grid">
+    {% for post in site.portfolio %}
+    <div class="col-6_sm-12 centered padded">
+      <div>
+        <div class="grid-center bg-img-portfolio" style="background-image: url('{{post.banner}}')">
+        </div>
+          <div class="homepage-description">
+            <h3>
+              {{post.title}}
+            </h3>
+            <p>
+              {{post.description}}
+            </p>
+          </div>
+      </div>
+    </div>
+    {%endfor%}
+  </div>
+</section>
