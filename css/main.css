@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #size-indicator::after {
@@ -30,9 +30,13 @@ body {
 
 h1 {
   color: #F7F9FB;
-  font-size: 3rem;
-  max-width: 60%;
+  font-size: 5rem;
   margin: auto;
+  text-transform: uppercase;
+}
+
+h1 span {
+  display: block;
 }
 
 h2, h3, h4, h5, h6 {
@@ -64,6 +68,22 @@ a:hover {
   color: #687864;
 }
 
+header {
+  background-color: #5085A5;
+}
+
+header .logo {
+  height: 4rem;
+  padding: 0rem 2rem;
+}
+
+header nav a {
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  color: #F7F9FB;
+  font-weight: bold;
+}
+
 section {
   background-color: #F7F9FB;
   padding: 5% 10%;
@@ -92,6 +112,10 @@ section {
 
 .full-width{
   width: 100%;
+}
+
+.semi-transparent {
+  background-color: rgba(80, 133, 165, 0.7);
 }
 
 .homepage-description {
