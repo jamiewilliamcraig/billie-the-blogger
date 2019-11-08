@@ -45,8 +45,17 @@ h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 1.5rem
-  line-height: 1.5rem
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.larger-text {
+  font-size: 1.2rem;
+}
+
+.rounded-image {
+  border-radius: 20%;
 }
 
 img {
@@ -94,6 +103,11 @@ section {
   color: #F7F9FB;
 }
 
+.dark-section h2 {
+  color: #F7F9FB;
+  text-transform: uppercase;
+}
+
 .padded {
   padding: 5%;
 }
@@ -125,6 +139,15 @@ section {
   color: #F7F9FB;
   width: 80%;
   padding: 5%;
+}
+
+.dark-section .homepage-description {
+  background-color: #F7F9FB;
+  color: #31708E;
+}
+
+.dark-section .homepage-description h3 {
+  color: #31708E;
 }
 
 .homepage-description h3 {
