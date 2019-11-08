@@ -5,6 +5,10 @@
   border: 1px solid black;
 }
 
+#size-indicator::after {
+  content: "extra small (xs)";
+}
+
 /*
 Main text color: #687864
 Alternitive text color: #5085A5
@@ -133,4 +137,34 @@ hr { /* this is a line element */
 .dark-section .btn:hover {
   color: #5085A5;
   border-color: #5085A5;
+}
+
+/* Above CSS applies for xs and above */
+
+/* Specific CSS for sm */
+@media (min-width: 36em) {
+  #size-indicator::after {
+    content: "small (sm)";
+  }
+}
+
+/* Specific CSS for md */
+@media (min-width: 48em) {
+  #size-indicator::after {
+    content: "medium (md)";
+  }
+}
+
+/* Specific CSS for lg */
+@media (min-width: 64em) {
+  #size-indicator::after {
+    content: "large (lg)";
+  }
+}
+
+/* Specific CSS for xl */
+@media (min-width: 80em) {
+  #size-indicator::after {
+    content: "extra large (xl)";  
+  }
 }
