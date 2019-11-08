@@ -55,7 +55,7 @@ p {
 }
 
 .rounded-image {
-  border-radius: 20%;
+  border-radius: 10px;
 }
 
 img {
@@ -82,7 +82,7 @@ header {
 }
 
 header .logo {
-  height: 4rem;
+  height: 5rem;
   padding: 0rem 2rem;
 }
 
@@ -105,6 +105,10 @@ section {
 
 .dark-section h2 {
   color: #F7F9FB;
+  text-transform: uppercase;
+}
+
+.light-section h2 {
   text-transform: uppercase;
 }
 
@@ -152,6 +156,7 @@ section {
 
 .homepage-description h3 {
   color: #F7F9FB;
+  min-height: 4.6rem;
 }
 
 .capped-width { width: 80%; margin: auto;}

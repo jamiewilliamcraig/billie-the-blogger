@@ -1,6 +1,6 @@
 ---
-banner: /images/bali-to-gili-trawangan-gili-t-sunset.jpg
-title: Photoshoot
-description: Great bunch of lads
+banner: images/billy-goes-to-iceland.JPG
+title: Billy goes to Iceland
+description: Billy meets his Williamsson ancestors
 category: portfolio
 ---

@@ -1,6 +1,6 @@
 ---
-banner: /images/bali-to-gili-trawangan-gili-t-sunset.jpg
-title: Lads
-description: lads etc
+banner: images/billy-gets-fit.JPG
+title: Billys goes from fat to fit
+description: Billy ate too many pies
 category: blog
 ---

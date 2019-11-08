@@ -1,6 +1,6 @@
 ---
-banner: /images/bali-to-gili-trawangan-gili-t-sunset.jpg
-title: Lads on tour
-description: lads lads lads
+banner: /images/billie-goes-to-thailand.JPG
+title: Billy goes to Thailand
+description: Don't sit on elephants
 category: blog
 ---

@@ -1,6 +1,6 @@
 ---
-banner: /images/bali-to-gili-trawangan-gili-t-sunset.jpg
-title: Lads will be Lads
-description: lad.com
+banner: images/billy-overreacts.JPG
+title: Billy overreacts
+description: Billy is hungover
 category: blog
 ---
