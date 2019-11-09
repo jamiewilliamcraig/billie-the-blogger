@@ -21,9 +21,17 @@ layout: default
     </section>
     <section class="dark-section">
       <h2>
-      Billy's Blags
+      Latest Blags
       </h2>
-      {% for post in site.blog limit:3 %}
+      {% for post in site.blog limit:1 %}
+      {% include post-listing-simple.html%}
+      {% endfor %}
+    </section>
+    <section class="dark-section">
+      <h2>
+      Latest Partfalia
+      </h2>
+      {% for post in site.portfolio limit:1 %}
       {% include post-listing-simple.html%}
       {% endfor %}
     </section>

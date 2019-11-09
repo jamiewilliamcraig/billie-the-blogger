@@ -69,7 +69,8 @@ p {
 
 .social-icons {
   font-size: 5rem;
-  padding: 10% 5% 0% 5%
+  padding: 10% 5% 0% 5%;
+  color: #F7F9FB;
 }
 
 .policies {
@@ -83,7 +84,7 @@ p {
 .bg-img-portfolio {
   background-position: center;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 30vh;
 }
 
 img {
@@ -106,6 +107,15 @@ aside h2 {
 a {
   color: #5085A5;
   text-decoration: none;
+}
+
+.sidebar-image-title {
+  color: #5085A5;
+  margin-top: 5.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f7fafc;
+  padding: 0.7rem;
 }
 
 a:hover {
@@ -205,7 +215,7 @@ section h2 {
 .post-listing-simple {
   display: block;
   border-bottom: 1px solid #5085A5;
-  padding: 1rem 0.5rem;
+  /* padding: 1rem 0.5rem; */
   color: #F7F9FB;
 }
 
@@ -264,6 +274,67 @@ h6:last-child,
 p:last-child {
   margin-bottom:0;
 }
+
+/*  */
+form input,
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid #F7F9FB;
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin: 1rem 0 0;
+  display: inline-block; /* This ads margin above each label. You need display inline block, because by default it's an inline element that won't accept vertical margin.*/
+  color: #F7F9FB;
+  font-weight: bold;
+}
+
+/* Checkbox styles */
+
+form input[type="checkbox"]{
+  margin: 0 1rem;
+  width: auto;
+  display:inline-block;
+}
+
+.checkboxes p {
+  margin:0.5rem 0;
+  font-size: 0.8rem;
+}
+.checkboxes {
+  margin: 0 0 1.5em;
+  padding:0!important;
+}
+
+form input[type="submit"] {
+  background-color:#6C7A89;
+  color:white;
+  border: none;
+}
+
+/* Style 2 remove comment to show alternative
+
+form input,
+form textarea {
+  border: 2px solid #6C7A89;
+  padding:1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+form label {
+  text-transform: uppercase;
+}
+
+*/
+
+/*  */
 
 hr { /* this is a line element */
   border: none;
@@ -326,7 +397,7 @@ hr { /* this is a line element */
 }
 
 
-
+.ig-b- { display: inline; } .ig-b- img { visibility: hidden; } .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; } .ig-b-16 { width: 16px; height: 16px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0; } @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { .ig-b-16 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png); background-size: 60px 178px; } }
 
 /* Above CSS applies for xs and above */
 
