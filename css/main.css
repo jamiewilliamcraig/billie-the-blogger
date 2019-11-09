@@ -5,9 +5,9 @@
   /* border: 1px solid black; */
 }
 
-#size-indicator::after {
+/* #size-indicator::after {
   content: "extra small (xs)";
-}
+} */
 
 /*
 Main text color: #687864
@@ -24,8 +24,8 @@ body {
 
 .banner {
   background-position: center;
-  background-size: cover;
-  min-height: 60vh;
+  background-size: contain;
+  min-height: 80vh;
 }
 
 h1 {
@@ -62,6 +62,10 @@ p {
   border-radius: 10px;
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
 .social-icons {
   font-size: 5rem;
   padding: 10% 5% 0% 5%
@@ -79,6 +83,23 @@ p {
   background-position: center;
   background-size: cover;
   min-height: 40vh;
+}
+
+img {
+  max-width: 100%
+}
+
+aside {
+  border-left: 1px solid #5085A5;
+}
+
+aside h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.article {
+  padding: 5% 10%;
 }
 
 a {
@@ -132,6 +153,7 @@ section h2 {
   color: #F7F9FB;
 }
 
+
 .dark-section h2 {
   color: #F7F9FB;
   text-transform: uppercase;
@@ -149,6 +171,10 @@ section h2 {
 
 .light-section h2 {
   text-transform: uppercase;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .padded {
@@ -175,6 +201,18 @@ section h2 {
   background-color: rgba(80, 133, 165, 0.7);
 }
 
+.post-listing-simple {
+  display: block;
+  border-bottom: 1px solid #5085A5;
+  padding: 1rem 0.5rem;
+  color: #F7F9FB;
+}
+
+.post-listing-simple span {
+  font-size: 0.9rem;
+  display: block;
+}
+
 .homepage-description {
   margin: auto;
   margin-top: -2rem;
@@ -197,6 +235,8 @@ section h2 {
   color: #F7F9FB;
   min-height: 4.6rem;
 }
+
+
 
 .capped-width { width: 60%; margin: auto;}
 
