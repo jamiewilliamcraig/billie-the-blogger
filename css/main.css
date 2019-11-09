@@ -64,6 +64,7 @@ p {
 
 .rounded {
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .social-icons {
@@ -306,6 +307,27 @@ hr { /* this is a line element */
 .light-section .btn:hover {
   color: #5085A5;
   border-color: #5085A5;
+}
+/* Editor Styles for CloudCannon */
+
+.one-half {
+  width: 49%;
+  display: inline-block;
+}
+
+.one-third {
+  width: 32%;
+  display: inline-block;
+}
+
+.two-thirds {
+  width: 64%;
+  display: inline-block;
+}
+
+
+
+
 /* Above CSS applies for xs and above */
 
 /* Specific CSS for sm */
