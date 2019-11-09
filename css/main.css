@@ -39,9 +39,13 @@ h1 span {
   display: block;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 h2, h3, h4, h5, h6 {
   color: #5085A5;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 p {
@@ -58,8 +62,17 @@ p {
   border-radius: 10px;
 }
 
-img {
-  max-width: 100%;
+.social-icons {
+  font-size: 5rem;
+  padding: 10% 5% 0% 5%
+}
+
+.policies {
+  align-self: center;
+}
+
+.read-more {
+  border: 2px solid #5085A5;
 }
 
 .bg-img-portfolio {
@@ -86,6 +99,11 @@ header .logo {
   padding: 0rem 2rem;
 }
 
+footer .logo {
+  height: 5rem;
+  padding: 0rem 2rem;
+}
+
 header nav a {
   padding: 1.5rem 2rem;
   display: inline-block;
@@ -93,9 +111,20 @@ header nav a {
   font-weight: bold;
 }
 
+footer nav a {
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  color: #5085A5;
+  font-weight: bold;
+}
+
 section {
   background-color: #F7F9FB;
   padding: 5% 10%;
+}
+
+section h2 {
+  text-transform: uppercase;
 }
 
 .dark-section {
@@ -108,12 +137,22 @@ section {
   text-transform: uppercase;
 }
 
+.dark-section-social {
+  background-color: #31708E;
+  color: #F7F9FB;
+}
+
+.dark-section-social h2 {
+  color: #F7F9FB;
+  text-transform: uppercase;
+}
+
 .light-section h2 {
   text-transform: uppercase;
 }
 
 .padded {
-  padding: 5%;
+  padding: 3%;
 }
 
 .padded-1 {
@@ -159,7 +198,7 @@ section {
   min-height: 4.6rem;
 }
 
-.capped-width { width: 80%; margin: auto;}
+.capped-width { width: 60%; margin: auto;}
 
 .tall-50  {  min-height: 50vh;   }
 .tall-100 {  min-height: 100vh;  }
@@ -198,10 +237,11 @@ hr { /* this is a line element */
   border: 2px solid;
   padding: 0.6rem 2rem;
   margin-top: 1rem;
-  display: inline-block;
+  /* display: inline-block; */
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
+
 }
 
 .btn:hover {
@@ -218,6 +258,14 @@ hr { /* this is a line element */
   border-color: #5085A5;
 }
 
+.light-section .btn {   /* this is for a button on a dark background */
+  border: 2px solid #F7F9FB;
+  color: #F7F9FB;
+}
+
+.light-section .btn:hover {
+  color: #5085A5;
+  border-color: #5085A5;
 /* Above CSS applies for xs and above */
 
 /* Specific CSS for sm */

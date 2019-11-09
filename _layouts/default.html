@@ -23,49 +23,160 @@
 <body>
   <p id="size-indicator"></p>
 
-  <!-- HEADER -->
+
+<!-- BEGINNING OF DEFAULT PAGE -->
+
+
+<!-- HEADER -->
 
   <header>
-    <div class="grid">
+    <div class="grid centered">
+
+<!-- logo on the left -->
+
       <div class="col-6 grid-left">
-        <img class="logo" src="/images/billy-the-logo.JPG" alt="Billo">
+        <a href='http://127.0.0.1:4000/'> <img class="logo" src="/images/billy-the-logo.JPG" alt="Billo"> </a>
       </div>
+
+<!-- navigation on tabs on the right -->
+
       <nav class="col-6 grid-right">
-        <a href="#"> About </a>
+        <a href="/about"> About </a>
         <a href="/blog"> Blog </a>
         <a href="/portfolio"> Portfolio </a>
-        <a href="#"> Contact </a>
+        <a href="/contact"> Contact </a>
       </nav>
+
+<!-- end of header code -->
+
     </div>
   </header>
 
-  <!-- CONTENT -->
+
+<!-- CONTENT -->
+
 
   {{content}}
 
-  <!-- FOOTER -->
-  <footer class="grid">
-    <div class="col-6 grid-left">
-      <img class="logo" src="/images/billy-the-logo.JPG" alt="Billo">
+
+<!-- INSTAGRAM SECTION -->
+
+<section class="grid-noGutter">
+  <div>
+    Instagram
+  </div>
+  <div>
+    Follow button
+  </div>
+</section>
+
+
+<!-- LETS CONNECT SECTION -->
+
+  <section class="dark-section-social">
+
+    <!-- social header -->
+
+      <div class="centered padded">
+        <h2>
+          connect with billy
+        </h2>
+      </div>
+
+<!-- left handside header, paragraph and social buttons -->
+      <div class="grid">
+        <div class="col-6_sm-12">
+          <div class="padded">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p> <strong> Email: </strong> hello@billy.com </p>
+            <p> <strong> Phone: </strong> 0412 555 555 </p>
+            <p> <strong> Facebook: </strong> fb.com/billywilliamsson </p>
+          </div>
+          <div>
+            <a href="#">
+              <i class="fab social-icons fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab social-icons fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab social-icons fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+<!-- mailing list on the right hand side -->
+
+        <div class="col-6_sm-12">
+          <form class="grid" action="https://formspree.io/hello@company.com" method="POST">
+            <div class="col-6_sm-12">
+              <input type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="col-6_sm-12">
+              <input type="email" name="_replyto" placeholder="Your Email">
+            </div>
+            <div class="col-12">
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Send" class="button">
+            </div>
+          </form>
+        </div>
+      </div>
+
+<!-- end of lets connect code-->
+
+  </section>
+
+
+<!-- FOOTER SECTION -->
+
+  <footer>
+    <div class="grid centered">
+
+<!-- logo image on the left hand side -->
+
+      <div class="col-6 grid-left">
+          <a href='http://127.0.0.1:4000/'> <img class="logo" src="/images/billy-the-logo.JPG" alt="Billo"> </a>
+      </div>
+
+<!-- policies on the right hand side -->
+
+      <nav class="col-6 grid-right">
+        <a href="/privacy-policy"> Privacy Policy </a>
+        <a href="/terms-and-conditions"> Terms and Conditions </a>
+      </nav>
+
+<!-- end of footer code -->
+
     </div>
-      <div>
-        <nav class="col-6 grid-right">
-          <a href="#"> Privacy Policy </a>
-          <a href="#"> Terms and Conditions </a>
-      </div>
-      <div>
-        <nav>
-          <a href="#">
-          <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="#">
-          <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-          <i class="fab fa-youtube"></i>
-          </a>
-        </nav>
-      </div>
   </footer>
+
 </body>
 </html>
+
+
+
+
+<!-- <section class="grid padded">
+  <div class="col-6_sm-12 padded">
+    <h2> Get In Touch </h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p> <strong> Email: </strong> hello@company.com </p>
+    <p> <strong> Phone: </strong> 0412 555 555 </p>
+    <p> <strong> Facebook: </strong> fb.com/companyname </p>
+  </div>
+  <div class="col-6_sm-12-middle padded">
+    <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+      <div class="col-6_sm-12">
+        <input type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="col-6_sm-12">
+        <input type="email" name="_replyto" placeholder="Your Email">
+      </div>
+      <div class="col-12">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Send" class="button">
+      </div>
+    </form>
+  </div>
+</section> -->
