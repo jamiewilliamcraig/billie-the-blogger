@@ -40,7 +40,20 @@
 
 <!-- navigation on tabs on the right -->
 
-      <nav class="col-6 grid-right">
+      <nav class="col-6 grid-right tablet-hide">
+        <div class="burger-button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </div>
+        <div class="burger-menu">
+          <a href="/about"> About </a>
+          <a href="/blog"> Blog </a>
+          <a href="/portfolio"> Portfolio </a>
+          <a href="/contact"> Contact </a>
+        </div>
+      </nav>
+      <nav class="col-6 grid-right tablet-show">
         <a href="/about"> About </a>
         <a href="/blog"> Blog </a>
         <a href="/portfolio"> Portfolio </a>
@@ -149,7 +162,9 @@
 
     </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/main.js">
+  </script>
 </body>
 </html>
 

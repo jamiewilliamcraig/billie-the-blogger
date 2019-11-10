@@ -1,9 +1,39 @@
 ---
 layout: default
 ---
+{% include banner.html %}
 
-<section class="padded">
-  <h1>{{page.title}} </h1>
-  {{content}}
-
-</section>
+<div class="grid-noGutter">
+  <article class="col-9_sm-12">
+    <div class="article">
+    {{ content }}
+    </div>
+  </article>
+  <aside class="col-3_sm-12">
+    <section class='centered dark-section'>
+      <img src="/images/billy-the-logo.JPG" class="rounded" alt="Billy">
+      <h2>
+        Billy Williamsson
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+    <section class="dark-section">
+      <h2>
+      Latest Blags
+      </h2>
+      {% for post in site.blog limit:1 %}
+      {% include post-listing-simple.html%}
+      {% endfor %}
+    </section>
+    <section class="dark-section">
+      <h2>
+      Latest Partfalia
+      </h2>
+      {% for post in site.portfolio limit:1 %}
+      {% include post-listing-simple.html%}
+      {% endfor %}
+    </section>
+  </aside>
+</div>

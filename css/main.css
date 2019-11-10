@@ -23,8 +23,9 @@ body {
 }
 
 .banner {
+  background-attachment: fixed;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   min-height: 80vh;
 }
 
@@ -141,6 +142,7 @@ header nav a {
   display: inline-block;
   color: #F7F9FB;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 footer nav a {
@@ -397,15 +399,119 @@ hr { /* this is a line element */
 }
 
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #DEAF9C;
+}
+
+/* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+  margin-top: 1rem;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid #F7F9FB;
+  background-color: #F7F9FB;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: #31708E;
+  background-color: #31708E;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left:0;
+    right: 0;
+    bottom: 100vh;
+    background-color: #F7F9FB;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  top:0;
+  bottom:0;
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #31708E;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+  text-transform: uppercase;
+}
+
+
 .ig-b- { display: inline; } .ig-b- img { visibility: hidden; } .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; } .ig-b-16 { width: 16px; height: 16px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0; } @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { .ig-b-16 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png); background-size: 60px 178px; } }
 
 /* Above CSS applies for xs and above */
+
+.mob-hide {
+  display: none;
+}
+
+.tablet-show {
+  display: none;
+}
 
 /* Specific CSS for sm */
 @media (min-width: 36em) {
   #size-indicator::after {
     content: "small (sm)";
   }
+
 }
 
 /* Specific CSS for md */
@@ -413,12 +519,19 @@ hr { /* this is a line element */
   #size-indicator::after {
     content: "medium (md)";
   }
+
 }
 
 /* Specific CSS for lg */
 @media (min-width: 64em) {
   #size-indicator::after {
     content: "large (lg)";
+  }
+  .tablet-show {
+    display: block;
+  }
+  .tablet-hide {
+    display: none;
   }
 }
 
